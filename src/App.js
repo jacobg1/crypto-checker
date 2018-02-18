@@ -15,10 +15,10 @@ class App extends Component {
       bch: ''
     }
     // this.getBtc = this.getBtc.bind(this)
-    this.getBtc()
-    this.getEth()
-    this.getLtc()
-    this.getBch()
+    // this.getBtc()
+    // this.getEth()
+    // this.getLtc()
+    // this.getBch()
   }
     getBtc () {
       fetch('https://api.coinbase.com/v2/prices/BTC-USD/spot')
@@ -72,21 +72,26 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <div className="header">
+        <h1>price checker</h1>
+      </div>
+      <div className="flexContainer">
         <div className="bitcoin">
-          <h1>Bitcoin</h1>
+          <h2>Bitcoin</h2>
           <p>{this.state.btc}</p>
         </div>
         <div className="bitcoinCash">
-          <h1>Bitcoin Cash</h1>
+          <h2>Bitcoin Cash</h2>
           <p>{this.state.bch}</p>
         </div>
         <div className="etherum">
-          <h1>Etherum</h1>
+          <h2>Etherum</h2>
           <p>{this.state.eth}</p>
         </div>
         <div className="litecoin">
-          <h1>Litecoin</h1>
+          <h2>Litecoin</h2>
           <p>{this.state.ltc}</p>
+        </div>
         </div>
       </div>
     );
