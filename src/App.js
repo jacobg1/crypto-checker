@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import 'whatwg-fetch';
+import $ from 'jquery';
 
 
 
@@ -15,10 +16,7 @@ class App extends Component {
       bch: ''
     }
     // this.getBtc = this.getBtc.bind(this)
-    // this.getBtc()
-    // this.getEth()
-    // this.getLtc()
-    // this.getBch()
+    
   }
     getBtc () {
       fetch('https://api.coinbase.com/v2/prices/BTC-USD/spot')
@@ -68,6 +66,12 @@ class App extends Component {
           console.log('BCH', this.state.bch)
         })
     }
+    showPrices() {
+      this.getBtc()
+      this.getEth()
+      this.getLtc()
+      this.getBch()
+    }
       
   render() {
     return (
@@ -76,7 +80,7 @@ class App extends Component {
         <h1>Price Checker</h1>
       </div>
       <div className="flexContainer">
-      <button className="checkButton">check prices</button>
+      <button className="checkButton" onClick={()=>this.showPrices()}>check prices</button>
         <div className="bitcoin">
           <h2>Bitcoin</h2>
           <p>{this.state.btc}</p>
