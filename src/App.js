@@ -76,6 +76,7 @@ class App extends Component {
         <h1>Price Checker</h1>
       </div>
       <div className="flexContainer">
+      <button className="checkButton">check prices</button>
         <div className="bitcoin">
           <h2>Bitcoin</h2>
           <p>{this.state.btc}</p>

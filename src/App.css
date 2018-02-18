@@ -41,4 +41,20 @@ body {
 .bitcoin {
   padding-top: 50px;
 }
+
+.checkButton {
+  background-color: #ff7474;
+  border: 0;
+  display: inline-block;
+  float: right;
+  color: white;
+  margin-top: 27px;
+  margin-right: 8px;
+  padding: 3px 5px 4px 5px;
+  font-size: 13px;
+}
+
+.checkButton:focus {
+  outline: 0;
+}
 /*# sourceMappingURL=app.css.map */
