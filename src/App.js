@@ -73,7 +73,7 @@ class App extends Component {
     return (
       <div className="App">
       <div className="header">
-        <h1>price checker</h1>
+        <h1>Price Checker</h1>
       </div>
       <div className="flexContainer">
         <div className="bitcoin">
