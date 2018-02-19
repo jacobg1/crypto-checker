@@ -79,8 +79,10 @@ class App extends Component {
       <div className="header">
         <h1>Price Checker</h1>
       </div>
-      <div className="flexContainer">
+      <div className="maxWidthContainer">
       <button className="checkButton" onClick={()=>this.showPrices()}>check prices</button>
+      <div className="flexContainer">
+        <div className="rowOne">
         <div className="bitcoin">
           <h2>Bitcoin</h2>
           <p>{this.state.btc}</p>
@@ -89,6 +91,8 @@ class App extends Component {
           <h2>Bitcoin Cash</h2>
           <p>{this.state.bch}</p>
         </div>
+        </div>
+        <div className="rowTwo">
         <div className="etherum">
           <h2>Etherum</h2>
           <p>{this.state.eth}</p>
@@ -96,6 +100,8 @@ class App extends Component {
         <div className="litecoin">
           <h2>Litecoin</h2>
           <p>{this.state.ltc}</p>
+        </div>
+        </div>
         </div>
         </div>
       </div>

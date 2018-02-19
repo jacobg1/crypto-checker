@@ -53,14 +53,87 @@ body {
 .checkButton {
     background-color: #ff7474;
     border: 0;
-    display: block;
-    // float: right;
+    display: block; // float: right;
     color: white;
     margin-top: 27px;
-    margin-left: 12px;
-    padding: 3px 5px 4px 5px;
-    font-size: 13px;
+    margin-left: 7%;
+    padding: 5px 8px 6px 8px;
+    font-size: 14px;
     &:focus {
         outline: 0;
+    }
+}
+
+@media screen and (min-width: 475px) {
+    .rowOne {
+        float: right;
+        width: 50%;
+    }
+    .rowTwo {
+        width: 50%;
+    }
+    .etherum h2,
+    .bitcoin h2 {
+        margin-top: 0;
+    }
+    .etherum,
+    .bitcoin,
+    .bitcoinCash,
+    .litecoin {
+        padding-bottom: 64px;
+    }
+    .etherum {
+        margin-top: 16%;
+    }
+    .App h2 {
+        font-size: 35px;
+    }
+    .App p {
+        font-size: 26px;
+    }
+    .header h1 {
+        padding-top: 4px;
+        font-size: 34px;
+    }
+    .litecoin,
+    .bitcoinCash {
+        margin-top: 100px;
+    }
+    .checkButton {
+        font-size: 18px;
+        margin-top: 44px;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .App {
+        h2 {
+            font-size: 54px;
+        }
+        p {
+            font-size: 33px;
+        }
+    }
+    .maxWidthContainer {
+        margin-top: 15%;
+    }
+    .checkButton {
+        font-size: 28px;
+        padding: 8px 15px 9px 15px;
+    }
+    .header {
+        height: 115px;
+        h1 {
+            padding-top: 12px;
+            font-size: 55px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .checkButton {
+        font-size: 35px;
+        padding: 8px 15px 13px 15px;
     }
 }
