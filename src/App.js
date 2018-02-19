@@ -71,6 +71,8 @@ class App extends Component {
       this.getEth()
       this.getLtc()
       this.getBch()
+      let $checkButton = $('.checkButton');
+      $checkButton.text("refresh");
     }
       
   render() {
