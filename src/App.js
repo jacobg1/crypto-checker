@@ -79,7 +79,7 @@ class App extends Component {
     return (
       <div className="App">
       <div className="header">
-        <h1>Price Checker</h1>
+        <h1>Crypto Checker</h1>
       </div>
       <div className="maxWidthContainer">
       <button className="checkButton" onClick={()=>this.showPrices()}>check prices</button>
